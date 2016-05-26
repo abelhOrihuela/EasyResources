@@ -6,6 +6,10 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 Bundler.require(:default, Rails.env)
 
+config.generators do |g|
+  g.assets false
+end
+
 module EasyMovies
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.
